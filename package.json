@@ -2,6 +2,10 @@
   "name": "adonis5-starter",
   "version": "1.0.0",
   "private": true,
+  "adonis-version": "5.0.0",
+  "description": "This is a customized boilerplate of AdonisJS 5 API blueprint",
+  "author": "Hadian Rahmat <hadian.rahmat@gits.id>",
+  "license": "MIT",
   "scripts": {
     "build": "node ace build --production",
     "start": "node server.js",
