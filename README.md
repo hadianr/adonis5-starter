@@ -35,6 +35,27 @@ example> git clone git@url:repository/name.git
 - run `node ace serve --watch` to run adonis development server.
 - the server accessible from a browser on `http://localhost:3333`
 
+### Conventional Commit
+
+1. **fix:** a commit of the type fix patches a bug in your codebase (this correlates with PATCH in semantic versioning).
+2. **feat:** a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in semantic versioning).
+3. **BREAKING CHANGE:** a commit that has a footer BREAKING CHANGE:, or appends a ! after the type/scope, introduces a breaking API change (correlating with MAJOR in semantic versioning). A BREAKING CHANGE can be part of commits of any type.
+types other than fix: and feat: are allowed, for example @commitlint/config-conventional (based on the the Angular convention) recommends build:, chore:, ci:',docs:,style:,refactor:,perf:,test:, and others.
+4. **footers other than BREAKING CHANGE:** <description> may be provided and follow a convention similar to git trailer format.
+
+example: `git commit`
+
+commit messages:
+```bash
+[type] [optional scope]: [short summary]
+
+[body] - at least 20 characters up to 72, optional only for docs
+
+[optional footer] - Ticket(Jira,Taiga,Superfun): X
+```
+
+for description details : https://www.conventionalcommits.org/
+
 ## Contributing
 
 To contribute, you may follow these steps:
@@ -51,7 +72,8 @@ To contribute, you may follow these steps:
 
 ## Installed Add-ons/Plugin
 
--
+- [Husky](https://github.com/typicode/husky)
+- [commitlint](https://commitlint.js.org/)
 
 ## 3rd Party service(s)
 
